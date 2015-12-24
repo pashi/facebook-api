@@ -8,3 +8,9 @@ Usage
 -----
 
 ./fb_reader.py config.json
+
+
+License
+-------
+
+GNU GENERAL PUBLIC LICENSE Version 2
