@@ -1,7 +1,9 @@
 {
 "group_id": "xxx",
 "output_feed_file": "__fb_feed.html",
+"output_feed_json": "__fb_feed.json",
 "output_event_file": "__fb_event.html",
+"output_event_json": "__fb_event.json",
 "token": "xxx",
 "base_url": "https://graph.facebook.com/v2.5",
 "feed_line": "<p>%(message)s<br><small>%(updated_time)s, <a href=\"https://www.facebook.com/%(id)s\">more</a></small></p>",

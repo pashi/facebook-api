@@ -81,9 +81,17 @@ def main():
   config = load_config(sys.argv[1])
 
   feeds = get_request (config, REQUEST_TYPE_FEED)
+  if config.has_key('output_feed_json'):
+    f = open(config['output_feed_json'], 'w')
+    f.write(json.dumps(feeds))
+    f.close()
   generate_html_feed(config, feeds)
 
   events = get_request (config, REQUEST_TYPE_EVENTS)
+  if config.has_key('output_event_json'):
+    f = open(config['output_event_json'], 'w')
+    f.write(json.dumps(feeds))
+    f.close()
   generate_html_event(config, events)
   sys.exit(0)
 
